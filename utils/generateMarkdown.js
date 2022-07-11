@@ -1,5 +1,5 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// TODO: Create a function that returns the license link
+//  Create a function that returns a license badge based on which license is passed in
+//  Create a function that returns the license link
 function renderLicenseBadge(license) {
   if(license !== 'None') {
     return `![GitHub license](https://img/shields.io/badge/license-${license}-blue.svg)`
@@ -7,7 +7,7 @@ function renderLicenseBadge(license) {
 return '';
 }
   
-  // TODO: Create a function to generate markdown for README
+  //  Create a function to generate markdown for README
   function renderLicenseLink(license) {
     if (license !== 'None') {
       return `* [License](#license)`

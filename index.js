@@ -1,4 +1,4 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
@@ -71,7 +71,7 @@ const questions = [
     type: 'input',
     name: 'tests',
     message:
-      'If applicable, describe tests you have run on this project so far',
+      'If applicable, describe tests you have run on this project so far.',
   },
 ];
 

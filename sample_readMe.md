@@ -2,7 +2,7 @@ My Project
     ![GitHub license](https://img/shields.io/badge/license-GPLv3-blue.svg)
   
   ## Title of Project
-  My Project
+  My Projects
     
   ## Description of Project
   Description goes here 
