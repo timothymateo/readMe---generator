@@ -1,4 +1,4 @@
-//  Create a function that returns a license badge based on which license is passed in
+//  Create a function that returns a license badge based on license picked by user
 //  Create a function that returns the license link
 function renderLicenseBadge(license) {
   if(license !== 'None') {
