@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./utils/generateMarkdown.js');
+const generateMarkdown = require('./utils/generateMarkdown');
 let fileName = 'README.md';
 
 const questions = [
@@ -54,7 +54,7 @@ const questions = [
   {
     type: 'input',
     name: 'usage',
-    message: 'How is your app used? Provide instructions',
+    message: 'How is your app used? Please high level steps.',
   },
   {
     type: 'list',
@@ -75,26 +75,12 @@ const questions = [
   },
 ];
 
-function writeToFile(fileName, answers) {
-  markDown = generateMarkdown(answers);
-  fs.writeFile(fileName, markDown, (err) => {
-    err ? console.error(err) : console.log('readme generated');
-  });
-}
-
 function init() {
   inquirer
-    .prompt(questions)
-    .then((answers) => {
-      // console.log(answers);
-      writeToFile(fileName, answers);
-    })
-    .catch((error) => {
-      if (error.isTtyError) {
-        console.error(error.message);
-      } else {
-        console.error(error.message);
-      }
-    });
+  .prompt(questions)
+  .then((data) => fs.writeFileSync('sample_readMe.md', generateMarkdown(data)))
+  .then(() => console.log('You did it! Your readMe was successfully generated!'))
+  .catch((err) => console.error(err));
 }
+
 init();
