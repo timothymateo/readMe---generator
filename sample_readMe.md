@@ -1,27 +1,37 @@
-My Project
-    ![GitHub license](https://img/shields.io/badge/license-GPLv3-blue.svg)
-  
-  ## Title of Project
-  My Projects
+# ReadMe Generator 
+    ![license-badge](https://img.shields.io/badge/license-MIT-blue)
     
   ## Description of Project
-  Description goes here 
+  Create a quick and easy ReadMe file
+
+---
+
+  ## Table of Contents
+
+    * [Installation Process](#installation)
+
+    * [Used For](#usage)
+
+    * [Contributing](#contributing)
+
+    * [Tests Completed](#tests)
+
+  ---
 
   ## Installation Process
-  node index.js
+  Through node index.js
 
-  ## Usage
-  through terminal
-
-  ## License
-      This readMe is licensed under the GPLv3.
+  ## Used For
+  Through node index.js
 
   ## Contributing
-  clone repo
+  Through cloning the repo
 
   ## Tests Completed
-  through visual code and terminal
+  Through Visual Code
 
-  [Email](mailto:123@gmail.com)
-  
-  [GitHub](github.comundefined)
+---
+
+  ## Questions
+  * GitHub Profile - https://github.com/timothymateo
+  * Email me at tmurphy@bswift.com

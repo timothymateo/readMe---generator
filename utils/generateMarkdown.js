@@ -1,46 +1,46 @@
-//  Creates a function that returns a license badge based on license picked by user
-//  Create a function that returns the license link
-function renderLicenseBadge(license) {
-  if(license !== 'None') {
-    return `![GitHub license](https://img/shields.io/badge/license-${license}-blue.svg)`
+function renderLicenseLink(license) {
+  if (license === 'MIT') {
+    licenseLink = `[MIT](https://opensource.org/licenses/MIT)`;
   }
-return '';
+  if (license === 'GPLv3') {
+    licenseLink = `[GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)`;
+  }
+  if (license === 'Apache--2.0') {
+    licenseLink = `[Apache-2.0](https://opensource.org/licenses/Apache-2.0)`;
+  }
+  if (license === 'ISC') {
+    licenseLink = `[ISC](https://opensource.org/licenses/ISC)`;
+  }
 }
-  
-  //  Create a function to generate markdown for README
-  function renderLicenseLink(license) {
-    if (license !== 'None') {
-      return `* [License](#license)`
-    } else {
-      return '';
-    }
-  } 
-
-  function renderLicenseSection(license) {
-    if(license !== 'None') {
-      return `## License
-      This readMe is licensed under the ${license}.`
-    }
-    return '';
-  }
 
   function generateMarkdown(data) {
-    return `${data.title}
-    ${renderLicenseBadge(data.license)}
-  
-  ## Title of Project
-  ${data.title}
+    renderLicenseLink(data.license);
+    console.log(licenseLink);
+    return `# ${data.title} 
+    ![license-badge](https://img.shields.io/badge/license-${data.license}-blue)
     
   ## Description of Project
   ${data.description}
 
+---
+
+  ## Table of Contents
+
+    * [Installation Process](#installation)
+
+    * [Used For](#usage)
+
+    * [Contributing](#contributing)
+
+    * [Tests Completed](#tests)
+
+  ---
+
   ## Installation Process
   ${data.installation}
 
-  ## Usage
+  ## Used For
   ${data.usage}
-
-  ${renderLicenseSection(data.license)}
 
   ## Contributing
   ${data.contributing}
@@ -48,11 +48,12 @@ return '';
   ## Tests Completed
   ${data.tests}
 
-  [Email](mailto:${data.email})
-  
-  [GitHub](github.com${data.github})
-`;
+---
 
+  ## Questions
+  * GitHub Profile - https://github.com/${data.username}
+  * Email me at ${data.email}
+`;
   }
 
 module.exports = generateMarkdown;

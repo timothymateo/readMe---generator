@@ -1,7 +1,7 @@
 // Includez the packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./utils/generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 let fileName = 'README.md';
 
 const questions = [
@@ -44,17 +44,17 @@ const questions = [
   {
     type: 'input',
     name: 'description',
-    message: 'Provide a description for your project',
+    message: 'Provide a description for your project.',
   },
   {
     type: 'input',
     name: 'installation',
-    message: 'List the steps required to install your application',
+    message: 'List some quick steps required to install your app.',
   },
   {
     type: 'input',
     name: 'usage',
-    message: 'How is your app used? Please high level steps.',
+    message: 'How is your app used? Please list high level steps.',
   },
   {
     type: 'list',
