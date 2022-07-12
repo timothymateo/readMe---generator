@@ -17,40 +17,32 @@ function renderLicenseLink(license) {
     renderLicenseLink(data.license);
     console.log(licenseLink);
     return `# ${data.title} 
-
----
     
   ## Description of Project
   ${data.description}
 
 ---
 
-  ## Table of Contents
-
-    - [Installation Process](#Installation-Process)
-
-    - [Used For](#Used-For)
-
-    - [Contributions](#Contributions)
-
-    - [Tests Completed](#Tests-Completed)
-
-    - [License](#License)
-
-    - [Questions](#Questions)
+  ## Table Of Contents:
+    * [Installation](#installation)
+    * [Used](#used)
+    * [Contributions](#contributions)
+    * [Tests](#tests)
+    * [License](#license)
+    * [Questions](#questions)
 
   ---
 
-  ## Installation Process
+  ## Installation
   ${data.installation}
 
-  ## Used For
+  ## Used
   ${data.usage}
 
   ## Contributions
   ${data.contributing}
 
-  ## Tests Completed
+  ## Tests
   ${data.tests}
 
 ---
