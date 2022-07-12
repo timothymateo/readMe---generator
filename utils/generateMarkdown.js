@@ -1,15 +1,15 @@
 function renderLicenseLink(license) {
   if (license === 'MIT') {
-    licenseLink = `[MIT](https://opensource.org/licenses/MIT)`;
+    licenseLink = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
   }
   if (license === 'GPLv3') {
-    licenseLink = `[GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)`;
+    licenseLink = `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
   }
   if (license === 'Apache--2.0') {
-    licenseLink = `[Apache-2.0](https://opensource.org/licenses/Apache-2.0)`;
+    licenseLink = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
   }
   if (license === 'ISC') {
-    licenseLink = `[ISC](https://opensource.org/licenses/ISC)`;
+    licenseLink = `[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)`;
   }
 }
 
@@ -17,7 +17,8 @@ function renderLicenseLink(license) {
     renderLicenseLink(data.license);
     console.log(licenseLink);
     return `# ${data.title} 
-    ![license-badge](https://img.shields.io/badge/license-${data.license}-blue)
+
+---
     
   ## Description of Project
   ${data.description}
@@ -26,17 +27,17 @@ function renderLicenseLink(license) {
 
   ## Table of Contents
 
-    * [Installation Process](#Installation-Process)
+    - [Installation Process](#Installation-Process)
 
-    * [Used For](#Used-For)
+    - [Used For](#Used-For)
 
-    * [Contributions](#Contributions)
+    - [Contributions](#Contributions)
 
-    * [Tests Completed](#Tests-Completed)
+    - [Tests Completed](#Tests-Completed)
 
-    * [License](#License)
+    - [License](#License)
 
-    * [Questions](#Questions)
+    - [Questions](#Questions)
 
   ---
 
@@ -55,7 +56,7 @@ function renderLicenseLink(license) {
 ---
  ## Lincense
 
- Licensed under the ${licenseLink} License.
+ Licensed under the ${licenseLink} license.
 
 ---
 
