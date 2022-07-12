@@ -9,6 +9,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@emdaer/transform-table-of-contents": "^3.2.31",
     "inquirer": "^6.3.1",
     "markdown-toc": "^1.2.0",
     "node.js": "^0.0.1-security"

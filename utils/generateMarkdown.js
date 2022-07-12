@@ -22,6 +22,8 @@ function renderLicenseLink(license) {
   ${data.description}
 
 ---
+<!--emdaer-t
+  - '@emdaer/transform-table-of-contents'
 
   ## Table Of Contents:
     * [Installation](#installation)
@@ -30,7 +32,7 @@ function renderLicenseLink(license) {
     * [Tests](#tests)
     * [License](#license)
     * [Questions](#questions)
-
+  -->
   ---
 
   ## Installation
