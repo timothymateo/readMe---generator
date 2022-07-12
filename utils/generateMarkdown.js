@@ -18,43 +18,47 @@ function renderLicenseLink(license) {
     console.log(licenseLink);
     return `# ${data.title} 
     
-  ## Description of Project
+## Description of Projectct
   ${data.description}
 
 ---
-<!--emdaer-t
-  - '@emdaer/transform-table-of-contents'
 
-  ## Table Of Contents:
-    * [Installation](#installation)
-    * [Used](#used)
-    * [Contributions](#contributions)
-    * [Tests](#tests)
-    * [License](#license)
-    * [Questions](#questions)
-  -->
+##  2. Table Of Contents:
+    * 1. [Installation](#installation)
+    * 2. [Used](#used)
+    * 3. [Contributions](#contributions)
+    * 4. [Tests](#tests)
+    * 5. [License](#license)
+    * 6. [Questions](#questions)
+
+<!-- vscode-markdown-toc-config
+	numbering=true
+	autoSave=true
+	/vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc -->
+
   ---
 
-  ## Installation
+##  3. <a name='Installation'></a>Installation
   ${data.installation}
 
-  ## Used
+##  4. <a name='Used'></a>Used
   ${data.usage}
 
-  ## Contributions
+##  5. <a name='Contributions'></a>Contributions
   ${data.contributing}
 
-  ## Tests
+##  6. <a name='Tests'></a>Tests
   ${data.tests}
 
 ---
- ## Lincense
+##  7. <a name='Lincense'></a>Lincense
 
  Licensed under the ${licenseLink} license.
 
 ---
 
-  ## Questions
+##  8. <a name='Questions'></a>Questions
 
   * GitHub Profile: https://github.com/${data.username}
   * Email me at: ${data.email}
