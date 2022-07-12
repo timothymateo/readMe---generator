@@ -1,37 +1,47 @@
-# ReadMe Generator 
-    ![license-badge](https://img.shields.io/badge/license-MIT-blue)
+# ReadMe Generator 2.0 
+    ![license-badge](https://img.shields.io/badge/license-GPLv3-blue)
     
   ## Description of Project
-  Create a quick and easy ReadMe file
+  Generate a readme file for your project.
 
 ---
 
   ## Table of Contents
 
-    * [Installation Process](#installation)
+    * [Installation Process](#Installation-Process)
 
-    * [Used For](#usage)
+    * [Used For](#Used-For)
 
-    * [Contributing](#contributing)
+    * [Contributions](#Contributions)
 
-    * [Tests Completed](#tests)
+    * [Tests Completed](#Tests-Completed)
+
+    * [License](#License)
+
+    * [Questions](#Questions)
 
   ---
 
   ## Installation Process
-  Through node index.js
+  You must have dev tools installed and a the repor forked on your machine.
 
   ## Used For
-  Through node index.js
+  It's used to create a readme.md file for your project.
 
-  ## Contributing
-  Through cloning the repo
+  ## Contributions
+  They can ask to be contributors thorugh GitHub and push changes from their branch to main.
 
   ## Tests Completed
-  Through Visual Code
+  All tests were ran through VisualCode studio.
+
+---
+ ## Lincense
+
+ Licensed under the [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) License.
 
 ---
 
   ## Questions
-  * GitHub Profile - https://github.com/timothymateo
-  * Email me at tmurphy@bswift.com
+
+  * GitHub Profile: https://github.com/timothymateo
+  * Email me at: tmurphy@bswift.com

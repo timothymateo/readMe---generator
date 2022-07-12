@@ -26,13 +26,17 @@ function renderLicenseLink(license) {
 
   ## Table of Contents
 
-    * [Installation Process](#installation)
+    * [Installation Process](#Installation-Process)
 
-    * [Used For](#usage)
+    * [Used For](#Used-For)
 
-    * [Contributing](#contributing)
+    * [Contributions](#Contributions)
 
-    * [Tests Completed](#tests)
+    * [Tests Completed](#Tests-Completed)
+
+    * [License](#License)
+
+    * [Questions](#Questions)
 
   ---
 
@@ -42,18 +46,25 @@ function renderLicenseLink(license) {
   ## Used For
   ${data.usage}
 
-  ## Contributing
+  ## Contributions
   ${data.contributing}
 
   ## Tests Completed
   ${data.tests}
 
 ---
+ ## Lincense
+
+ Licensed under the ${licenseLink} License.
+
+---
 
   ## Questions
-  * GitHub Profile - https://github.com/${data.username}
-  * Email me at ${data.email}
-`;
+
+  * GitHub Profile: https://github.com/${data.username}
+  * Email me at: ${data.email}
+`
+;
   }
 
 module.exports = generateMarkdown;
